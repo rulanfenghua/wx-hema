@@ -1,0 +1,33 @@
+<view class="goodsList">
+  <view class="goodsList-hd">
+    <view class="goodsList-hd">
+      <view class="goodsList-title">
+        <a class="goodsList-title-text">分类</a>
+        <view class="goodsList-hd-right right">
+          <image bindtap="toSort" src="../../assets/icons/shopping-sel.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="goodsList-bd">
+    <scroll-view scroll-y>
+      <block wx:for="{{goods}}" wx:key="index" wx:for-index="index">
+        <view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell-hd">
+              <image src="{{item.image}}" />
+            </view>
+            <view class="weui-cell-bd">
+              <view class="goodsList-bd-intro">{{item.name}}</view>
+              <view class="view-bd-price">
+                <text class="price left">￥{{item.price}}/{{item.unit}}</text>
+                <text class="add right" bindtap="addInCart" id="{{index}}">+</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="goodsList-ft"></view>
+</view>

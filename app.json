@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0eb6ff",
+    "navigationBarTitleText": "盒马生鲜",
+    "navigationBarTextStyle": "white"
+  }
+}
